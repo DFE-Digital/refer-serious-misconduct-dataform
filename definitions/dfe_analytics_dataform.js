@@ -164,7 +164,7 @@ dfeAnalyticsDataform({
       description: ""
    }, {
       keyName: "eligibility_check_id",
-      dataType: "integer",
+      dataType: "string",
       description: ""
    }, {
       keyName: "email_address",
