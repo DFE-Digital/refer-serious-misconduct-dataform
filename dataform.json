@@ -2,5 +2,6 @@
     "warehouse": "bigquery",
     "defaultSchema": "dataform",
     "assertionSchema": "dataform_assertions",
-    "defaultDatabase": "refer-serious-misconduct"
+    "defaultDatabase": "refer-serious-misconduct",
+    "defaultLocation": "europe-west2"
 }
