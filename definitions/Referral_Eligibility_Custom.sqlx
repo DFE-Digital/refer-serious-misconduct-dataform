@@ -5,9 +5,10 @@ config {
 SELECT
   *
 except(id, updated_at, created_at, last_streamed_event_occurred_at, last_streamed_event_type),
-  tableA.id AS referral_id,
-  tableA.created_at as referral_created_at,
-  tableB.created_at as eligibility_created_at,
+  tableB.id AS referral_id,
+  tableB.created_at as referral_created_at,
+  tableA.created_at as eligibility_created_at,
 FROM
-  ${ref("referrals_latest_prod")} AS tableA
-  LEFT JOIN ${ref("eligibility_checks_latest_prod")} AS tableB ON tableA.eligibility_check_id = tableB.id
+  ${ref("eligibility_checks_latest_prod")} AS tableA
+  LEFT JOIN ${ref("referrals_latest_prod")} AS tableB ON tableA.id = tableB.eligibility_check_id
+
