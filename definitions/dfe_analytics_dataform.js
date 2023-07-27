@@ -535,6 +535,27 @@ dfeAnalyticsDataform({
       dataType: "string",
       description: ""
    }]
-}  
+},
+{
+   entityTableName: "feedbacks",
+   description: "",
+   keys: [{
+      keyName: "satisfaction_rating",
+      dataType: "string",
+      description: ""
+   }, {
+      keyName: "improvement_suggestion",
+      dataType: "string",
+      description: ""
+   }, {
+      keyName: "contact_permission_given",
+      dataType: "string",
+      description: ""
+   }, {
+      keyName: "email",
+      dataType: "string",
+      description: ""
+   }]
+}
   ]
 });
