@@ -1,7 +1,7 @@
 {
     "name": "refer-serious-misconduct",
     "dependencies": {
-        "@dataform/core": "2.3.2",
-        "dfe-analytics-dataform": "https://github.com/DFE-Digital/dfe-analytics-dataform/archive/refs/tags/v1.12.3.tar.gz"
+        "@dataform/core": "3.0.0",
+        "dfe-analytics-dataform": "https://github.com/DFE-Digital/dfe-analytics-dataform/archive/refs/tags/v1.12.5.tar.gz"
     }
 }
