@@ -456,6 +456,10 @@ dfeAnalyticsDataform({
                 dataType: "integer",
                 description: ""
             }, {
+                keyName: "feedback_notification",
+                dataType: "boolean",
+                description: ""
+            }, {
                 keyName: "invitation_accepted_at",
                 dataType: "timestamp",
                 description: ""
