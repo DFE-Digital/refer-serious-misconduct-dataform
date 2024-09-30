@@ -71,6 +71,14 @@ dfeAnalyticsDataform({
                 dataType: "boolean",
                 description: ""
             }, {
+                keyName: "complaint_status",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "continue_with",
+                dataType: "string",
+                description: ""
+            }, {
                 keyName: "is_teacher",
                 dataType: "string",
                 description: ""
