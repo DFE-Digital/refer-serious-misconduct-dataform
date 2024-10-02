@@ -101,6 +101,39 @@ dfeAnalyticsDataform({
             }]
         },
         {
+            entityTableName: "organisations",
+            description: "",
+            keys: [{
+                keyName: "referral_id",
+                dataType: "integer",
+                description: ""
+            }, {
+                keyName: "name",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "street_1",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "street_2",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "city",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "postcode",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "complete",
+                dataType: "string",
+                description: ""
+            }]
+        },
+        {
             entityTableName: "referral_evidences",
             description: "",
             keys: [{
@@ -567,6 +600,31 @@ dfeAnalyticsDataform({
                 description: ""
             }, {
                 keyName: "uuid",
+                dataType: "string",
+                description: ""
+            }]
+        },
+        {
+            entityTableName: "uploads",
+            description: "",
+            keys: [{
+                keyName: "section",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "filename",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "uploadable_type",
+                dataType: "string",
+                description: ""
+            }, {
+                keyName: "uploadable_id",
+                dataType: "integer",
+                description: ""
+            }, {
+                keyName: "malware_scan_result",
                 dataType: "string",
                 description: ""
             }]
