@@ -1,5 +1,6 @@
 config {
     type: "table",
+    schema: dataform.projectConfig.schemaSuffix ? "dataform" : "1_key_tables",
     columns: {
         first_name: {
             bigqueryPolicyTags: ["projects/refer-serious-misconduct/locations/europe-west2/taxonomies/222536751192641232/policyTags/1060373956414181161"]
@@ -92,17 +93,17 @@ config {
 }
 
 SELECT
-  * EXCEPT(id,
+  eligibility_checks.* EXCEPT(id,
     updated_at,
     created_at,
     last_streamed_event_occurred_at,
     last_streamed_event_type),
-  tableB.id AS referral_id,
-  tableB.created_at AS referral_created_at,
-  tableA.created_at AS eligibility_created_at,
+  referrals.id AS referral_id,
+  referrals.created_at AS referral_created_at,
+  eligibility_checks.created_at AS eligibility_created_at,
 FROM
-  ${ref("eligibility_checks_latest_prod")} AS tableA
+  ${ref("eligibility_checks_latest_prod")} AS eligibility_checks
 LEFT JOIN
-  ${ref("referrals_latest_prod")} AS tableB
+  ${ref("referrals_latest_prod")} AS referrals
 ON
-  tableA.id = tableB.eligibility_check_id
+  eligibility_checks.id = referrals.eligibility_check_id
