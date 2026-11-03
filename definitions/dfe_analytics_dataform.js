@@ -614,6 +614,7 @@ dfeAnalyticsDataform({
             }, {
                 keyName: "filename",
                 dataType: "string",
+                hidden: true,
                 description: ""
             }, {
                 keyName: "uploadable_type",
