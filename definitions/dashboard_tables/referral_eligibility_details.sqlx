@@ -88,7 +88,18 @@ config {
         },
         duties_details: {
             bigqueryPolicyTags: ["projects/refer-serious-misconduct/locations/europe-west2/taxonomies/222536751192641232/policyTags/1060373956414181161"]
-        }
+        },
+        eligibility_created_at: "Timestamp that the eligibility check was created at",
+        referral_created_at: "Timestamp that the referral was created at",
+        referral_id: "UID of the referral",
+        unsupervised_teaching: "Indicates if the person in this referral eligibility check is teaching unsupervised",
+        teaching_in_england: "Indicates if the person is teaching in England",
+        serious_misconduct: "Indicates if this referral eligibility check is serious misconduct",
+        reporting_as: "Type of person that the referral eligibility check has come from e.g. public, employer ",
+        is_teacher: "Indicates if the person in this referral eligibility check is teaching",
+        continue_with: "Indicates how this referral eligibility check should continue as e.g referral, or complaint",
+        complaint_status: "Status of complaint",
+        complained: "TRUE if this referral eligibility check is a complaint"
     }
 }
 
